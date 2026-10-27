@@ -3,4 +3,4 @@ display_name: 战舰世界-Kokomi
 desc: 战舰世界战绩查询。渲染器来自 NoneBot2 版 Kokomi 插件（代码随包分发，容器内独立渲染）
 version: v0.2.0
 author: local
-repo: ""
+repo: https://github.com/jiajieliu949/astrbot-kokomi
