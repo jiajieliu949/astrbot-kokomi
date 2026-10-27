@@ -1,0 +1,18 @@
+# Python caches and local tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# AstrBot runtime state and generated output
+kokomi/temp/
+kokomi/log/
+kokomi/db/
+
+# Local/editor files
+.vscode/
+.idea/
+*.swp
+Thumbs.db
+Desktop.ini

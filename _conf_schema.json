@@ -1,0 +1,161 @@
+{
+  "command": {
+    "description": "指令前缀。默认 wws",
+    "type": "string",
+    "default": "wws"
+  },
+  "group_blacklist": {
+    "description": "群聊黑名单：列表中的群不会触发本插件的查询或回复",
+    "type": "list",
+    "items": {
+      "type": "string",
+      "description": "群号"
+    },
+    "default": []
+  },
+  "llm_tool_enable": {
+    "description": "【LLM 工具】总开关 —— 开启后用户可以用自然语言查询战绩",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_evaluate": {
+    "description": "【LLM 工具】查询结果是否让 AI 顺带点评玩家表现（关闭则只汇报数据）",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_rate_limit": {
+    "description": "【LLM 工具】限流：每个会话每分钟最多查询次数（≤0 表示不限流）",
+    "type": "int",
+    "default": 10
+  },
+  "llm_auto_image": {
+    "description": "【LLM 工具】查询时同时渲染原图发给用户（关闭则只返回文字给 AI）",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_account": {
+    "description": "工具开关：总体战绩（水表）",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_ship": {
+    "description": "工具开关：单船战绩",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_recent": {
+    "description": "工具开关：近期战绩汇总（按天，全部模式）",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_recent_random": {
+    "description": "工具开关：近期随机战",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_recent_rank": {
+    "description": "工具开关：近期排位战",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_ship_recent": {
+    "description": "工具开关：单船近期战绩",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_recent_battles": {
+    "description": "工具开关：最近24小时逐场明细",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_ships": {
+    "description": "工具开关：按舰种/等级筛选",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_bind": {
+    "description": "工具开关：引导绑定游戏账号",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_info": {
+    "description": "工具开关：玩家总表（详细版水表）",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_card": {
+    "description": "工具开关：绑定及账户数据卡片",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_oper": {
+    "description": "工具开关：剧情数据",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_cw": {
+    "description": "工具开关：公会战数据",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_rank": {
+    "description": "工具开关：排位赛数据总览",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_rank_season": {
+    "description": "工具开关：指定排位赛季数据",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_clan_info": {
+    "description": "工具开关：公会信息",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_clan_season": {
+    "description": "工具开关：公会指定赛季数据",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_clan_history": {
+    "description": "工具开关：公会赛季历史",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_me_ship_rank": {
+    "description": "工具开关：自己单船全服排名",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_ship_server_rank": {
+    "description": "工具开关：单船全服排行前50",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_ship_server_stats": {
+    "description": "工具开关：单船服务器总体数据",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_online": {
+    "description": "工具开关：服务器在线人数",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_search_ship": {
+    "description": "工具开关：船只列表查询",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_server_ships": {
+    "description": "工具开关：服务器船只数据",
+    "type": "bool",
+    "default": true
+  },
+  "llm_tool_enable_ship_batch": {
+    "description": "工具开关：多船批量查询（一次查多艘船）",
+    "type": "bool",
+    "default": true
+  }
+}
