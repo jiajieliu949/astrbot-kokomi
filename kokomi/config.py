@@ -1,9 +1,12 @@
+import os
+
+
 class Plugin_Config:
     # 数据接口指定和默认配置
-    API_URL = 'http://43.155.60.190:8000'
-    API_TYPE = 'Bearer'
-    API_USERNAME = 'user'
-    API_PASSWORD = '123456'
+    API_URL = os.getenv('KOKOMI_API_URL', 'http://43.155.60.190:8000')
+    API_TYPE = os.getenv('KOKOMI_API_TYPE', 'Bearer')
+    API_USERNAME = os.getenv('KOKOMI_API_USERNAME', '')
+    API_PASSWORD = os.getenv('KOKOMI_API_PASSWORD', '')
     REQUEST_TIMEOUT = 10
     # 默认触发关键词
     CN_START_WITH = 'wws'

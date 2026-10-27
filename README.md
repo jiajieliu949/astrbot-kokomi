@@ -58,6 +58,17 @@ WebUI → 插件配置 → `astrbot_plugin_kokomi`，见[配置说明](#配置�
 
 ## 配置说明
 
+上游 API 凭据通过环境变量配置，不要写入源码：
+
+```bash
+KOKOMI_API_URL=http://43.155.60.190:8000
+KOKOMI_API_TYPE=Bearer
+KOKOMI_API_USERNAME=你的用户名
+KOKOMI_API_PASSWORD=你的密码
+```
+
+其中 `KOKOMI_API_URL` 和 `KOKOMI_API_TYPE` 可省略，分别默认为上游地址和 `Bearer`。
+
 | 配置项 | 类型 | 默认 | 说明 |
 |---|---|---|---|
 | `command` | string | `wws` | 指令前缀 |
